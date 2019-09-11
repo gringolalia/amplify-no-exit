@@ -1,55 +1,71 @@
-<template>
-  <div class="container">
-    <nuxt />
-  </div>
+<template lang="pug">
+div
+	b-navbar(toggleable='lg' type='dark' variant='primary')
+		b-navbar-brand(href='#' style="font-style: normal; font-weight: 300;")
+			i.fas.fa-sun.fa-lg.mr-2
+			| Engenhoca Dorminhoca Opus Sete
+
+		b-navbar-toggle(target='nav-collapse')
+
+		b-collapse#nav-collapse(is-nav='')
+			b-navbar-nav
+				b-nav-item.ml-5(href='#') Tabled
+
+				b-nav-item(href='#') Enabled
+
+			b-navbar-nav.ml-auto
+				b-nav-form
+					b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
+
+					b-button.my-2.my-sm-0(size='sm', type='submit') Procurar
+
+				b-nav-item-dropdown(text='Idioma' right)
+					b-dropdown-item(href='#') Arabe
+
+					b-dropdown-item(href='#') Farsi
+
+					b-dropdown-item(href='#') Aramaico
+
+					b-dropdown-item(href='#') Turco
+
+					b-dropdown-item(href='#') Euskara
+
+					b-dropdown-item(href='#') Ladino
+
+				b-nav-item-dropdown(right='')
+
+					template(v-slot:button-content='')
+						| Usuário
+
+					b-dropdown-item(href='#') Profile
+
+					b-dropdown-item(href='#') Sign Out
+	nuxt
 </template>
-
 <style>
-html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+body, html {
+  font-family: 'News Cycle', sans-serif !important;
+	font-weight: 300 !important;
 }
 
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-  margin: 0;
+.dignity, b-navbar-brand {
+  font-family: 'News Cycle', sans-serif !important;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+	h1, h2, h3, h4, h5, h6, b-navbar-brand {
+  font-family: 'News Cycle',sans-serif !important;
+  font-weight: 300 !important;
+	font-style: normal !important;
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+.material-icons, .fa {
+  vertical-align: middle;
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+b-nav-item {
+	color: white;
+	font-size: 20px;
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
-}
+
 </style>

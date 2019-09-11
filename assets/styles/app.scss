@@ -1,0 +1,28 @@
+$font-family-sans-serif: "News Cycle", sans-serif;
+
+@import 'bootstrap/scss/bootstrap.scss';
+@import 'bootstrap-vue/src/index.scss';
+
+body, html {
+  font-family: 'News Cycle', sans-serif !important;
+	font-weight: 300 !important;
+	font-style: normal !important;
+}
+
+.dignity, b-navbar-brand {
+  font-family: 'News Cycle', sans-serif !important;
+}
+
+	h1, h2, h3, h4, h5, h6 {
+  font-family: 'News Cycle',sans-serif !important;
+  font-weight: 300 !important;
+}
+
+.material-icons, .fa {
+  vertical-align: middle;
+}
+
+b-nav-item {
+	color: white;
+	font-size: 20px;
+}
