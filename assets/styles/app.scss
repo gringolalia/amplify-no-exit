@@ -1,5 +1,17 @@
 $font-family-sans-serif: "News Cycle", sans-serif;
 
+:root {
+	--primary: #607d8b;
+  --secondary: #6e7180;
+  --success: #6699cc;
+  --info: #536872;
+  --warning: #ffffe0;
+  --danger: #990000;
+  --light: #f8f9fa;
+  --dark: #343a40;
+}
+
+
 @import 'bootstrap/scss/bootstrap.scss';
 @import 'bootstrap-vue/src/index.scss';
 
