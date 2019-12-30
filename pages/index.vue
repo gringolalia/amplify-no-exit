@@ -1,4 +1,4 @@
-		<template lang="pug">
+<template lang="pug">
 b-container
 	b-row
 		b-col
