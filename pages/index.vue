@@ -6,7 +6,7 @@ b-container
 			h1 Electrifying Netlify
 			h2 No Exit Bootstrap-Vue
 			h3.mb-5 Addio Mondo Crudele
-			b-button.mr-3(size="lg") Imprint Me
+			b-button.mr-3(variant="secondary" size="lg") Imprint Me
 			b-button(variant="primary" size="lg") Elint Me
 </template>
 <script>
