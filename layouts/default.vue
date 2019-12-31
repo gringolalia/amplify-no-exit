@@ -14,12 +14,12 @@ div
 				b-nav-item(href='#') Enabled
 
 			b-navbar-nav.ml-auto
-				b-nav-form
-					b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
+				//- b-nav-form
+				//- 	b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
 
-					b-button.my-2.my-sm-0(type='submit') Procurar
+				//- 	b-button.my-2.my-sm-0(type='submit') Procurar
 
-				b-nav-item-dropdown( text='Idioma' right)
+				b-nav-item-dropdown( text='Idiomas Melanomas' no-caret)
 					b-dropdown-item(href='#') Arabe
 
 					b-dropdown-item(href='#') Farsi
@@ -32,18 +32,30 @@ div
 
 					b-dropdown-item(href='#') Ladino
 
-				b-nav-item-dropdown(right='')
+				b-nav-item-dropdown(left no-caret)
+					i.material-icons.mr-1 waves
+					| Usuário
+					template(v-slot:button-content='Fungo')
 
-					template(v-slot:button-content='')
-						| Usuário
-
-					b-dropdown-item(href='#') Profile
-
-					b-dropdown-item(href='#') Sign Out
+					b-dropdown-item(href='#') American Elm
+					b-dropdown-item(href='#') Red Oak
+					b-dropdown-item(href='#') Striped Maple
+					b-dropdown-item(href='#') Sugar Maple
+					b-dropdown-item(href='#') American Holly
+					b-dropdown-item(href='#') American Sycamore
+					b-dropdown-item(href='#') Black Locust
+					b-dropdown-item(href='#') Black Walnut
+					b-dropdown-item(href='#') Black Willow
+					b-dropdown-item(href='#') Yellow Birch
+					b-dropdown-item(href='#') Bald Cypress
+					b-dropdown-item(href='#') Box Elder
 	nuxt
 </template>
 
 <style>
+
+@import '../assets/styles/app.css';
+
 body, html {
   font-family: 'News Cycle', sans-serif !important;
 	font-weight: 300 !important;
