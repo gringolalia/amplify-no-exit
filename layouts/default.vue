@@ -9,17 +9,17 @@ div
 
 		b-collapse#nav-collapse(is-nav='')
 			b-navbar-nav
-				b-nav-item.ml-5(href='#') Tabled
-
-				b-nav-item(href='#') Enabled
+				b-nav-item.active.ml-5.d-none.d-lg-block(href='#') 
+					i.fas.fa-sun.fa-2x.mr-2
+					| Shortcut to Paradise
 
 			b-navbar-nav.ml-auto
-				//- b-nav-form
-				//- 	b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
+				b-nav-form.d-none.d-lg-block
+					b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
 
-				//- 	b-button.my-2.my-sm-0(type='submit') Procurar
+					b-button.my-2.my-sm-0(type='submit') Procurar
 
-				b-nav-item-dropdown( text='Idiomas Melanomas' no-caret)
+				b-nav-item-dropdown.active( text='Idiomas Melanomas' no-caret)
 					b-dropdown-item(href='#') Arabe
 
 					b-dropdown-item(href='#') Farsi
@@ -32,9 +32,7 @@ div
 
 					b-dropdown-item(href='#') Ladino
 
-				b-nav-item-dropdown(left no-caret)
-					i.material-icons.mr-1 waves
-					| Usuário
+				b-nav-item-dropdown.active(text="Decidious Trees" left no-caret)
 					template(v-slot:button-content='Fungo')
 
 					b-dropdown-item(href='#') American Elm
