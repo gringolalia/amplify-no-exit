@@ -9,17 +9,20 @@ div
 
 		b-collapse#nav-collapse(is-nav='')
 			b-navbar-nav
-				b-nav-item.active.ml-5.d-none.d-lg-block(href='#') 
-					i.fas.fa-sun.fa-2x.mr-2
-					| Shortcut to Paradise
+				b-nav-item.active.ml-5.d-none.d-lg-block(href='/') 
+					i.fas.fa-university.fa-2x.mr-2
+					| Wossamotta University
 
 			b-navbar-nav.ml-auto
-				b-nav-form.d-none.d-lg-block
-					b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
+				//- b-nav-form.d-none.d-lg-block
+				//- 	b-form-input.mr-sm-2(size='sm', placeholder='Busqueda')
 
-					b-button.my-2.my-sm-0(type='submit') Procurar
+				//- 	b-button.my-2.my-sm-0(type='submit') Procurar
 
-				b-nav-item-dropdown.active( text='Idiomas Melanomas' no-caret)
+				
+				b-nav-item-dropdown.active(text='Idiomas Melanomas')
+					i.fas.fa-airplane.fa-pull-left
+
 					b-dropdown-item(href='#') Arabe
 
 					b-dropdown-item(href='#') Farsi
@@ -31,8 +34,13 @@ div
 					b-dropdown-item(href='#') Euskara
 
 					b-dropdown-item(href='#') Ladino
+					b-dropdown-item(href='#') Pawnee
+					b-dropdown-item(href='#') Sentinelese
+					b-dropdown-item(href='#') Swahili
+					b-dropdown-item(href='#') Amharic
+					b-dropdown-item(href='#') Ladhaki
 
-				b-nav-item-dropdown.active(text="Decidious Trees" left no-caret)
+				b-nav-item-dropdown.active(text="Deciduous Trees" left)
 					template(v-slot:button-content='Fungo')
 
 					b-dropdown-item(href='#') American Elm
@@ -69,7 +77,7 @@ body, html {
 	font-style: normal !important;
 }
 
-.material-icons, .fa {
+i, .material-icons {
   vertical-align: middle;
 }
 
