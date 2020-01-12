@@ -40,8 +40,8 @@ div
 					b-dropdown-item(href='#') Amharic
 					b-dropdown-item(href='#') Ladhaki
 
-				b-nav-item-dropdown.active(text="Deciduous Trees" left)
-					template(v-slot:button-content='Fungo')
+				b-nav-item-dropdown.active(text="Deciduous Trees" left no-caret)
+					template(v-slot:button-content)
 
 					b-dropdown-item(href='#') American Elm
 					b-dropdown-item(href='#') Red Oak
